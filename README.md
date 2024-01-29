@@ -8,15 +8,16 @@ main.cpp:n koodi on siis seuraava
 <pre>
 #include "person.h"
 
-#include <iostream>
-#include <memory>
+#include &lt;iostream&gt;
+#include &lt;memory&gt;
 
 using namespace std;
 
 int main()
 {
-    shared_ptr<Person> objectPerson = make_shared<Person>("Teppo", "Testi");
-    objectPerson->personInfo();
+    
+    shared_ptr&lt;Person&gt; objectPerson = make_shared&lt;Person&gt;("Teppo", "Testi");
+    objectPerson-&gt;personInfo();
 
     return 0;
 }
